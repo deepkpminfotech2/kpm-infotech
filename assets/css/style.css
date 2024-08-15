@@ -1,0 +1,520 @@
+/* ========================== import fonts ========================== */
+@import url("../vendor/fonts/Crimson_Text/stylesheet.css");
+@import url("../vendor/fonts/Roboto_Slab/stylesheet.css");
+@import url("../vendor/fonts/Russo_One/stylesheet.css");
+@import url("../vendor/fonts/Montserrat/stylesheet.css");
+
+/* ========================== Root Elements ==========================s */
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--dark-blue: #007bff;
+	--sky-blue: #aed6ff;
+	--light-blue: #e3f0ff;
+
+	--font-crimpsontext: "Crimson Text";
+	--font-roboto: "Roboto Slab";
+	--font-montserrat: "Montserrat";
+	--font-russoone: "Russo One";
+}
+
+/* ========================== Root classes ========================== */
+.white {
+	color: var(--white);
+}
+.black {
+	color: var(--black);
+}
+.dark-blue {
+	color: var(--dark-blue);
+}
+.light-blue {
+	color: var(--light-blue);
+}
+.sky-blue {
+	color: var(--sky-blue);
+}
+.bgwhite {
+	background: var(--white);
+}
+.bgblack {
+	background: var(--black);
+}
+.bg-darkblue {
+	background: var(--dark-blue);
+}
+.bg-lightblue {
+	background: var(--light-blue);
+}
+.bg-skyblue {
+	background: var(--sky-blue);
+}
+
+.font-1 {
+	font-family: var(--font-roboto) !important;
+}
+.font-2 {
+	font-family: var(--font-crimpsontext) !important;
+}
+.font-3 {
+	font-family: var(--font-montserrat) !important;
+}
+
+/* =================== PARTICLE JS START =================== */
+html {
+	overflow-x: hidden !important;
+}
+body {
+	position: relative;
+	overflow-x: hidden !important;
+	min-height: 100vh;
+	max-width: 100vw;
+}
+#particles-js {
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #e3f0ff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	z-index: 0;
+}
+.content {
+	position: relative;
+	z-index: 1;
+	pointer-events: none; /* Allow mouse events to pass through .content */
+}
+
+.content * {
+	pointer-events: auto;
+}
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+/* =================== PARTICLE JS END =================== */
+
+a,
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	box-sizing: border-box;
+}
+
+.border {
+	border: 1px solid black;
+}
+/* .border-black {
+	border: 1px solid black;
+} */
+.border-white {
+	border: 1px solid white;
+}
+
+/* ==================== CSS ==================== */
+
+/* .desktop-nav ul li a:hover {
+	color: var(--dark-blue);
+} */
+
+.btn1 {
+	font-size: 20px;
+	font-family: var(--font-crimpsontext);
+	font-weight: 600;
+	padding: 6px 15px;
+	border-radius: 5px;
+	background: linear-gradient(94.35deg, #208cff 1.95%, #0060c8 99.38%);
+	color: var(--white);
+	transition: all 0.3s linear;
+}
+.btn1:hover {
+	background: linear-gradient(94.35deg, #208cff 1.95%, #0060c8 99.38%);
+}
+.btn2 {
+	font-size: 20px;
+	font-family: var(--font-crimpsontext);
+	font-weight: 400;
+	padding: 6px 15px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+.btnarrow {
+	font-size: 20px;
+	font-family: var(--font-crimpsontext);
+	font-weight: 500;
+	padding: 6px 15px;
+	border-radius: 5px;
+	background: linear-gradient(94.35deg, #208cff 1.95%, #0060c8 99.38%);
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.animate_ping1 {
+	animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+	animation-delay: 0s;
+}
+.animate_ping2 {
+	animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+	animation-delay: 0.5s;
+}
+.animate_ping3 {
+	animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+	animation-delay: 1s;
+}
+.animate_ping4 {
+	animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+	animation-delay: 1.5s;
+}
+.animate_ping5 {
+	animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+	animation-delay: 2s;
+}
+.animate_ping6 {
+	animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+	animation-delay: 2.5s;
+}
+
+@keyframes ping {
+	75%,
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+.custom-btn {
+	width: 160px;
+	height: 43px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 25px;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+.btn-12 {
+	font-size: 20px;
+	position: relative;
+	right: 20px;
+	bottom: 20px;
+	border: none;
+	box-shadow: none;
+	width: 160px;
+	height: 42px;
+	line-height: 42px;
+	-webkit-perspective: 230px;
+	perspective: 230px;
+}
+.btn-12 span {
+	background: linear-gradient(94.35deg, #208cff 1.95%, #0060c8 99.38%);
+	display: block;
+	position: absolute;
+	width: 160px;
+	height: 42px;
+	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	margin: 0;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-12 span:nth-child(1) {
+	box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+	-webkit-transform: rotateX(90deg);
+	-moz-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	-webkit-transform-origin: 50% 50% -20px;
+	-moz-transform-origin: 50% 50% -20px;
+	transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	-webkit-transform-origin: 50% 50% -20px;
+	-moz-transform-origin: 50% 50% -20px;
+	transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	color: transparent;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+}
+
+/* ===================== CURVE DIV CSS ===================== */
+/* ===================== ============= ===================== */
+.curve_div {
+	position: relative;
+}
+.curve_div .box_top {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	background: transparent;
+}
+.curve_div .box_top .curve_left {
+	height: 40px;
+	width: 10.42%;
+	background: #aed6ff;
+	clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+}
+.curve_div .box_top .curve_right {
+	height: 40px;
+	width: 10.42%;
+	background: #aed6ff;
+	clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+}
+.curve_div .box_bottom {
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	height: 40px;
+	width: 100%;
+	background: transparent;
+}
+.curve_div .box_bottom .curve_bottom {
+	height: 40px;
+	width: 79.17%;
+	background: #aed6ff;
+	clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
+}
+
+.curve_div_header {
+	position: absolute;
+	top: -39px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background: transparent;
+}
+.curve_div_header h3 {
+	display: inline-block;
+	width: 86%;
+	clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
+}
+/* 
+  <section class="bg-sky-blue curve_div my-[50px] py-[50px]">
+    <div class="box_top absolute">
+      <div class="flex justify-between translate-y-[1px]"><span class="curve_left"></span><span class="curve_right"></span></div>
+    </div>
+    <div class="box_bottom absolute">
+      <div class="flex justify-center translate-y-[-1px]"><span class="curve_bottom"></span></div>
+    </div>
+    <div class="container mx-auto px-[48px]">
+      content
+    </div>
+  </section> 
+*/
+
+/* ================ SECTION HEADER ================ */
+/* ================ ============== ================ */
+.section-header h3 {
+	position: relative;
+	z-index: 1;
+}
+
+.section-header1 h3 {
+	background: linear-gradient(180deg, rgba(0, 123, 255, 0.6) 23.81%, rgba(0, 123, 255, 0.3) 62.61%, rgba(255, 255, 255, 0) 80.95%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+.section-header2 h3 {
+	background: linear-gradient(180deg, rgba(0, 123, 255, 0.6) 23.81%, rgba(0, 123, 255, 0.3) 62.61%, rgba(255, 255, 255, 0) 90.95%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.section-header3 h3 {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 23.81%, rgba(255, 255, 255, 0.3) 62.61%, rgba(255, 255, 255, 0) 80.95%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+.section-header3 p {
+	position: relative;
+	z-index: 1;
+}
+
+/* ================= WAVE CARD ================= */
+/* ================= ========= ================= */
+.wave-card {
+	background: var(--white);
+	padding: 20px;
+	border-radius: 5px;
+	color: var(--black);
+	position: relative;
+	overflow: hidden;
+}
+.wave-card:hover {
+	background: var(--dark-blue);
+	color: var(--white);
+}
+.wave-card:hover .top-stripe {
+	background: var(--white);
+}
+.wave-card:hover .img-div {
+	background: var(--white);
+}
+.wave-card .content {
+	position: relative;
+	z-index: 10;
+}
+.wave-card .content .title {
+	display: block;
+	font-weight: 700;
+	font-size: 17px;
+}
+.wave-card .content .desc {
+	font-weight: 600;
+	font-size: 13px;
+	font-family: var(--font-crimpsontext);
+	font-weight: 300;
+}
+.wave-card .content .desc .bold-text {
+	font-weight: 600;
+}
+.wave-card:hover .servicecard-bg {
+	height: 80%;
+	bottom: 0;
+	visibility: visible;
+}
+
+/* ================= WAVE CARD ================= */
+/* ================= ========= ================= */
+.wave-card2 {
+	background: var(--white);
+	padding: 20px;
+	border-radius: 5px;
+	color: var(--black);
+	position: relative;
+	overflow: hidden;
+}
+.wave-card2:hover .wave {
+	display: block;
+}
+.wave-card2:hover {
+	background: var(--sky-blue);
+	color: var(--white);
+}
+.wave-card2:hover .img-div {
+	background: var(--white);
+}
+.wave-card2 .content {
+	position: relative;
+	z-index: 10;
+}
+.wave-card2 .content .title {
+	display: block;
+	font-weight: 700;
+	font-size: 17px;
+}
+.wave-card2 .content .desc {
+	font-weight: 600;
+	font-size: 13px;
+	font-family: var(--font-crimpsontext);
+	font-weight: 300;
+}
+.wave-card2 .content .desc .bold-text {
+	font-weight: 600;
+}
+.wave-card2:hover .servicecard-bg {
+	height: 80%;
+	bottom: 0;
+	visibility: visible;
+}
+.wave {
+	display: none;
+	transition: all 0.3s linear;
+}
+.wave {
+	position: absolute;
+	width: 500px;
+	height: 700px;
+	opacity: 0.6;
+	left: -50%;
+	top: 35px;
+	background-color: #007bff;
+	border-radius: 40%;
+	animation: wave 5s infinite linear;
+}
+.wave:nth-child(2) {
+	top: 40px;
+	animation: wave 7s infinite linear;
+}
+.wave:nth-child(3) {
+	top: 45px;
+	animation: wave 9s infinite linear;
+}
+@keyframes wave {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+#frontend-technology .wave-card2 {
+	max-width: 200px;
+	margin: 0 auto;
+}
+#frontend-technology .owl-nav {
+	display: none;
+}
+#frontend-technology .owl-dots {
+	padding: 20px 0 0 0;
+}
+#frontend-technology .owl-dots .owl-dot span {
+	background: var(--white);
+}
+#frontend-technology .owl-dots .owl-dot:hover span {
+	background: var(--light-blue);
+}
+#frontend-technology .owl-dots .owl-dot.active span {
+	background: var(--dark-blue);
+}
+#frontend-technology .item {
+	margin: 0 10px 0 0;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+}
+.owl-carousel .owl-item img {
+	width: auto !important;
+}
+
+footer .owl-nav,
+.owl-dots {
+	display: none;
+}
