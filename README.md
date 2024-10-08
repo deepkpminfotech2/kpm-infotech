@@ -2,7 +2,7 @@
 
 @Url.Action("Diamond", "Categories")
 @Url.Action("Lab-Diamond", "Categories")
-@Url.Action("Lab-Diamond-Select", "Categories")
+@Url.Action("Lab-Color-Diamond-Select", "Categories")
 @Url.Action("Lab-Diamond-Confirm", "Categories")
 @Url.Action("How-Much-to-Spend", "Categories")
 @Url.Action("Lab-Grown-Guide", "Categories")
